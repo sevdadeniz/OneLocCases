@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:oneloc_case/screens/login.dart';
 
-import '../services/deleteAccountService.dart';
+import '../services/delete_account_service.dart';
 
 class DeletedAccount extends StatefulWidget {
   const DeletedAccount({super.key});

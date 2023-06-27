@@ -13,8 +13,10 @@ class LoginService {
       if (r.statusCode == 200) {
         return json.decode(r.body)["message"];
       } else
+        // ignore: curly_braces_in_flow_control_structures
         return "error";
     } catch (e) {
+      // ignore: avoid_print
       print(e.toString());
     }
     return "Error";

@@ -77,17 +77,18 @@ class IntroScreen extends StatelessWidget {
                               MaterialPageRoute(
                                   builder: (context) =>
                                       // here element passing to the detail page element contain index other details
-                                      LoginScreen()));
+                                      const LoginScreen()));
                         },
                         color: Colors.white,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10)),
                         child: InkWell(
-                          child: Text(
+                          child: const Text(
                             "Yeni Hesap Oluştur",
                             style: TextStyle(
                                 fontWeight: FontWeight.w600,
                                 fontSize: 18,
+                                // ignore: use_full_hex_values_for_flutter_colors
                                 color: Color(0xFFF0076FF)),
                           ),
                           onTap: () {
@@ -96,7 +97,7 @@ class IntroScreen extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) =>
                                         // here element passing to the detail page element contain index other details
-                                        RegisterScreen()));
+                                        const RegisterScreen()));
                           },
                         ),
                       ),
@@ -116,8 +117,7 @@ class IntroScreen extends StatelessWidget {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
-                                          // here element passing to the detail page element contain index other details
-                                          LoginScreen()));
+                                          const LoginScreen()));
                             },
                           ),
                         ],

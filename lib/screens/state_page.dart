@@ -31,7 +31,7 @@ class _StatePageState extends State<StatePage> {
           body: SingleChildScrollView(
             child: Container(
               color: Theme.of(context).colorScheme.background,
-              padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
+              padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
               child: Column(
                 children: [
                   Padding(
@@ -41,12 +41,12 @@ class _StatePageState extends State<StatePage> {
                       semanticsLabel: 'My SVG Image',
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Bilgilerin inceleniyor",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10.0, bottom: 40),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 10.0, bottom: 40),
                     child: Text(
                       "Oneloc ekibi vermiş olduğun bilgileri inceliyor. Onaylandıktan sonra bir bildirim alacaksın ve hesabını kullanmaya başlatabileceksin.",
                       style: TextStyle(
@@ -55,7 +55,7 @@ class _StatePageState extends State<StatePage> {
                       textAlign: TextAlign.center,
                     ),
                   ),
-                  Column(
+                  const Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       SizedBox(
@@ -85,7 +85,7 @@ class _StatePageState extends State<StatePage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
@@ -94,7 +94,7 @@ class _StatePageState extends State<StatePage> {
                       Padding(
                         padding: const EdgeInsets.only(bottom: 50.0),
                         child: InkWell(
-                          child: Text(
+                          child: const Text(
                             "Vazgeçtim, bilgilerimi tamamen sil",
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 18),
@@ -104,7 +104,7 @@ class _StatePageState extends State<StatePage> {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        DeletedAccount()));
+                                        const DeletedAccount()));
                           },
                         ),
                       ),

@@ -15,16 +15,17 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => IntroScreen()));
+          context, MaterialPageRoute(builder: (context) => const IntroScreen()));
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xFFF2F2F2F),
+      // ignore: use_full_hex_values_for_flutter_colors
+      color: const Color(0xFFF2F2F2F),
       width: double.infinity,
       child: Padding(
         padding: const EdgeInsets.all(16.0),

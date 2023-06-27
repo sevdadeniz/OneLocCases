@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:oneloc_case/screens/login.dart';
 import 'package:oneloc_case/screens/state_page.dart';
-import 'package:oneloc_case/services/registerService.dart';
+import 'package:oneloc_case/services/register_service.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -25,7 +25,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
         content: Text('Hesap Oluşturuldu'),
       );
 
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      // ignore: use_build_context_synchronously
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => const StatePage()));
     } else if (response == "This_Email_Is_Used") {
@@ -33,30 +35,35 @@ class _RegisterScreenState extends State<RegisterScreen> {
         content: Text('Bu email kullanılmaktadır'),
       );
 
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
     } else if (response == "This_Phone_Number_Is_Used") {
       const snackBar = SnackBar(
         content: Text('Bu telefon numarası kullanılmaktadır'),
       );
 
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
     } else if (response == "This_Email_Is_Used") {
       const snackBar = SnackBar(
         content: Text('Bu email kullanılmaktadır'),
       );
 
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
     } else if (response == "This_Usernam_Is_Used") {
       const snackBar = SnackBar(
         content: Text('Bu usernamekullanılmaktadır'),
       );
 
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
     } else {
       const snackBar = SnackBar(
         content: Text('Hatalı İşlem'),
       );
 
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
     }
   }
@@ -71,7 +78,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Text(
+        title: const Text(
           "Yeni Hesap Oluştur",
           textAlign: TextAlign.center,
         ),
@@ -83,7 +90,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           child: Column(
             children: [
               Container(
-                padding: EdgeInsets.only(top: 25.0),
+                padding: const EdgeInsets.only(top: 25.0),
                 child: const Text.rich(
                   TextSpan(
                     children: [
@@ -133,7 +140,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       filled: true,
                       fillColor: fillColor,
                       contentPadding:
-                          EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                          const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
                         borderSide: BorderSide(
@@ -207,8 +214,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ],
               ),
               Container(
-                padding: EdgeInsets.only(top: 80.0),
-                child: Text.rich(
+                padding: const EdgeInsets.only(top: 80.0),
+                child: const Text.rich(
                   TextSpan(
                     children: [
                       TextSpan(
@@ -273,7 +280,7 @@ Widget makeInput(
                 color: colorH, fontSize: 15, fontWeight: FontWeight.bold),
             filled: true,
             fillColor: color,
-            contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+            contentPadding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10.0),
               borderSide: BorderSide(
@@ -293,7 +300,7 @@ Widget makeInput(
           },
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 20,
       ),
     ],

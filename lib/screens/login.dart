@@ -30,14 +30,12 @@ class _LoginScreenState extends State<LoginScreen> {
         content: Text('Şifre Veya Email Hatalı'),
       );
 
-
       // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
     } else {
       const snackBar = SnackBar(
         content: Text('Hatalı İşlem'),
       );
-
 
       // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
@@ -152,8 +150,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>
-                                    const RegisterScreen()));
+                                builder: (context) => const RegisterScreen()));
                       },
                     ),
                   ],
@@ -211,7 +208,7 @@ Widget makeInput(
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
-      SizedBox(
+      const SizedBox(
         height: 20,
       ),
       SizedBox(
@@ -224,7 +221,8 @@ Widget makeInput(
                 color: colorH, fontSize: 15, fontWeight: FontWeight.bold),
             filled: true,
             fillColor: color,
-            contentPadding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+            contentPadding:
+                const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10.0),
               borderSide: BorderSide(
