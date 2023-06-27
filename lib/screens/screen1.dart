@@ -86,7 +86,7 @@ class IntroScreen extends StatelessWidget {
                           child: const Text(
                             "Yeni Hesap Oluştur",
                             style: TextStyle(
-                                fontWeight: FontWeight.w600,
+                                fontWeight: FontWeight.bold,
                                 fontSize: 18,
                                 // ignore: use_full_hex_values_for_flutter_colors
                                 color: Color(0xFFF0076FF)),
@@ -108,7 +108,7 @@ class IntroScreen extends StatelessWidget {
                             child: const Text(
                               "Giriş yap",
                               style: TextStyle(
-                                  fontWeight: FontWeight.w600,
+                                  fontWeight: FontWeight.bold,
                                   fontSize: 18,
                                   color: Colors.white),
                             ),

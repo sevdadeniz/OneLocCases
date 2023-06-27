@@ -131,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Text(
                         "Giriş yap",
                         style: TextStyle(
-                          fontWeight: FontWeight.w600,
+                          fontWeight: FontWeight.bold,
                           fontSize: 18,
                           color: Theme.of(context).colorScheme.tertiary,
                         ),
@@ -144,7 +144,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: const Text(
                         "Yeni hesap oluştur",
                         style: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 18),
+                            fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                       onTap: () {
                         Navigator.push(
