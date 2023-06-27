@@ -6,7 +6,8 @@ ThemeData lightTheme = ThemeData(
     backgroundColor: Color(0xFFFFFFFF),
   ),
   colorScheme: const ColorScheme.light(
-    background: Color.fromARGB(255, 78, 76, 76),
+    // ignore: use_full_hex_values_for_flutter_colors
+    background: Color(0xFFFEDEDED),
     // ignore: use_full_hex_values_for_flutter_colors
     secondary: Color(0xFFFCECECE),
     // ignore: use_full_hex_values_for_flutter_colors
